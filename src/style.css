@@ -2,10 +2,10 @@
   margin-bottom: 20px;
 }
 
-.block {
+.input-container {
   margin-bottom: 10px;
 }
 
-.block:last-child {
+.input-container:last-child {
   margin-bottom: 0;
 }

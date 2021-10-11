@@ -42,7 +42,7 @@ Create HTML page with form. On form submit send form data to `https://mate-acade
 - Add a button which submits the form.
 - Add `onsubmit="onSubmit()"` attribute to `form` tag to show form value on submit
 - Vertical distance between inputs should be `10px`
-- Vertical distance between blocks with inputs should be `20px`
+- Vertical distance between  input-containers with inputs should be `20px`
 - Any other styles should be browser default
 
 --> Don't forget to proofread your code using [CHECKLIST](https://github.com/mate-academy/layout_html-form/blob/master/checklist.md)

@@ -12,168 +12,174 @@
   </head>
   <body>
     <form
-    action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-    method="post"
-    autocomplete="off"
-    onsubmit="onSubmit()"
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+      onsubmit="onSubmit( )"
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
 
-        <div class="block">
+        <div class="input-container">
           <label for="surname">
             Surname:
             <input
-            type="text"
-            id="surname"
-            name="surname"
-            required
-            minlength="2"
-            pattern="\w+">
+              type="text"
+              id="surname"
+              name="surname"
+              required
+              minlength="2"
+              pattern="\w+"
+              autocomplete="off"
+            >
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="name">
             Name:
             <input
-            type="text"
-            id="name"
-            name="name"
-            required
-            minlength="2"
-            pattern="\w+">
+              type="text"
+              id="name"
+              name="name"
+              required
+              minlength="2"
+              pattern="\w+"
+              autocomplete="off"
+            >
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="age">
             How old are You?
             <input
-            type="number"
-            id="age"
-            name="age"
-            value="12"
-            min="12"
-            max="100"
-            required
+              type="number"
+              id="age"
+              name="age"
+              value="12"
+              min="12"
+              max="100"
+              required
+              autocomplete="off"
             >
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="date">
             Full date of birth:
             <input
-            type="date"
-            id="date"
-            name="date"
-            min="1921-01-01"
-            max="2009-12-31"
+              type="date"
+              id="date"
+              name="date"
+              min="1921-01-01"
+              max="2009-12-31"
             >
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="acception">
             I accept the term of the agreement
             <input
-            type="checkbox"
-            id="acception"
-            name="acception"
-            required
+              type="checkbox"
+              id="acception"
+              name="acception"
+              required
             >
           </label>
         </div>
-
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>Registration</legend>
 
-        <div class="block">
+        <div class="input-container">
           <label for="email">
             E-mail:
             <input
-            type="email"
-            id="email"
-            required
-            name="email"
-            placeholder="email@example.com"
+              type="email"
+              id="email"
+              required
+              name="email"
+              placeholder="email@example.com"
+              autocomplete="off"
             >
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="pass">
             Password:
             <input
-            type="password"
-            id="pass"
-            required
-            name="password"
-            minlength="6"
-            maxlength="20"
+              type="password"
+              id="pass"
+              required
+              name="password"
+              minlength="6"
+              maxlength="20"
+              autocomplete="off"
             >
           </label>
         </div>
-
       </fieldset>
 
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
 
-        <div class="block">
+        <div class="input-container">
           Do you love cats?
-          <label for="cats__yes">
+          <label for="likeCats">
             <input
-            type="radio"
-            id="cats__yes"
-            name="love__cats"
-            value="y"
+              type="radio"
+              id="likeCats"
+              name="likeCats"
+              value="yes"
             >
             Yes
           </label>
 
-          <label for="cats__no">
+          <label for="doNotLikeCats">
             <input
-            type="radio"
-            id="cats__no"
-            name="love__cats"
-            value="n"
+              type="radio"
+              id="doNotLikeCats"
+              name="likeCats"
+              value="no"
             >
             No
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="color">
             What is you favorite color?
             <input
-            type="color"
-            name="color"
-            id="color"
+              type="color"
+              name="color"
+              id="color"
             >
           </label>
         </div>
 
-        <div class="block">
+        <div class=" input-container">
           <label for="time">
             What time do you go to bed?
             <input
-            type="time"
-            name="time"
-            id="time">
+              type="time"
+              name="time"
+              id="time"
+            >
           </label>
         </div>
 
-        <div class="block">
-          <label for="favorite__cars">
+        <div class="input-container">
+          <label for="favoritCars">
             What are your favorite brand of cars?
             <select
-            name="cars"
-            id="favorite__cars"
-            multiple>
+              name="cars"
+              id="favoritCars"
+              multiple
+            >
               <option value="bmw">BMW</option>
               <option value="audi">Audi</option>
               <option value="lada">Lada</option>
@@ -181,37 +187,37 @@
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           <label for="range">
             How do you rate our work?
             <input
-            type="range"
-            id="range"
-            name="range"
-            value="0"
+              type="range"
+              id="range"
+              name="range"
+              value="0"
             >
           </label>
         </div>
-
       </fieldset>
 
       <fieldset class="fieldset">
-
         <legend>Additional info:</legend>
 
-        <div class="block">
+        <div class="input-container">
           <label for="coments">
             Comments:
             <textarea
-            name="coments"
-            id="coments"
-            cols="20"
-            rows="2"
+              name="coments"
+              id="coments"
+              cols="20"
+              rows="2"
+              autocomplete="off"
+
            ></textarea>
           </label>
         </div>
 
-        <div class="block">
+        <div class="input-container">
           Would you recommend us?
           <label for="recommendation">
             <select name="recommendation" id="recommendation">
@@ -220,7 +226,6 @@
             </select>
           </label>
         </div>
-
       </fieldset>
 
       <button type="submit">Submit</button>

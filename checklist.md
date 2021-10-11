@@ -94,7 +94,7 @@ it only if a certain value is specified from the start, or use placeholders.
 6. [FUNCTIONAL] - You need to use a label tag for each input, so that every
 input could be activated by clicking on the corresponding label.
 7. [TESTS] - Remember, you need to add a certain distance BETWEEN inputs and
-BETWEEN blocks with inputs. It means that, for example, the last input in
+BETWEEN  input-containers with inputs. It means that, for example, the last input in
 the group of inputs should not have a set bottom margin.
 8. [TESTS] - Remember, any other styles besides margins, should be browser
 default.
